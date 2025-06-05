@@ -1,0 +1,27 @@
+{
+  "name": "chapter-03---laying-the-foundation",
+  "version": "1.0.0",
+  "description": "Coded By Raman",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raman321/Namaste_ReactDev.git"
+  },
+  "author": "Raman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raman321/Namaste_ReactDev/issues"
+  },
+  "homepage": "https://github.com/raman321/Namaste_ReactDev#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
