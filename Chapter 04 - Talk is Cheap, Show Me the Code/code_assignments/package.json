@@ -1,16 +1,17 @@
 {
-  "name": "chapter-02---igniting-our-app",
+  "name": "code_assignments",
   "version": "1.0.0",
   "description": "Coded By Raman",
   "scripts": {
+    "start": "parcel index.html --port 1234",
+    "build": "parcel build index.html --public-url ./",
     "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raman321/Namaste_ReactDev.git"
   },
-  "keywords": [],
-  "author": "Raman Kumar",
+  "author": "Raman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raman321/Namaste_ReactDev/issues"
@@ -22,8 +23,5 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ]
+  }
 }
