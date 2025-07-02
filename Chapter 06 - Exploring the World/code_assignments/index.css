@@ -72,7 +72,31 @@ body {
   border-radius: 5px;
 }
 
-/* Body CSS */
+.nav-items > ul > li .logout-btn,
+.nav-items > ul > li .login-btn {
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  margin-right: 15px;
+}
+
+.nav-items > ul > li .logout-btn {
+  background-color: rgb(236, 56, 56);
+}
+
+.nav-items > ul > li .login-btn {
+  background-color:#00ad1d;
+}
+
+.nav-items > ul > li .logout-btn:hover,
+.nav-items > ul > li .login-btn:hover {
+  background-color: transparent;
+}
+
+/* Restaurant Body CSS */
 
 .body {
   width: 100%;
@@ -103,6 +127,15 @@ body {
   width: 90%;
   font-size: 1.2rem;
 }
+
+/* error message css */
+.error-container {
+  text-align: center;
+  font-size: large;
+  margin: 20px 0;
+}
+
+/* Restaurant cards CSS */
 
 .restaurant-container {
   width: 85%;
@@ -155,6 +188,12 @@ body {
   transform: scale(0.99);
 }
 
+.search-icon {
+  color: #cf5c05;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .search {
   padding: 10px;
 }
@@ -187,6 +226,58 @@ body {
   font-size: 16px;
   padding-bottom: 5px;
 }
+
+/*Shimmer CSS */
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.shimmer-card {
+  flex-basis: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-title {
+  width: 60%;
+  margin-top: 10px;
+}
+.shimmer-tags {
+  width: 80%;
+  margin-top: 4px;
+}
+.shimmer-details {
+  width: 100%;
+  margin-top: 18px;
+}
+.shimmer-container .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+
+/*Animation to Shimmer Component Cards */
+.stroke {
+  height: 15px;
+  background: #777;
+}
+.animate {
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+
 
 /* footer CSS Start*/
 .footer {
@@ -225,7 +316,9 @@ body {
   padding-left: 5px;
   color: #000;
 }
-
+.footer > strong > span {
+  color: #cc0f0f;
+}
 .footer > a > strong > span {
   color: darkorange;
 }

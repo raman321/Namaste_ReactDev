@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/raman321/Namaste_ReactDev#readme",
   "devDependencies": {
-    "parcel": "^2.15.2"
+    "parcel": "^2.15.4"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0"
   }
 }
