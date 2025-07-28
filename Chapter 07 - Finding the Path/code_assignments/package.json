@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Coded By Raman",
   "scripts": {
-    "start": "parcel index.html --port 1234",
+    "start": "parcel index.html",
     "build": "parcel build index.html --public-url ./",
     "test": "jest"
   },
@@ -11,10 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/raman321/Namaste_ReactDev.git"
   },
-  "keywords": [
-    "react"
-  ],
-  "author": "Raman Kumar",
+  "author": "Raman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raman321/Namaste_ReactDev/issues"
@@ -24,8 +21,11 @@
     "parcel": "^2.15.4"
   },
   "dependencies": {
+    "formik": "^2.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.11.2",
+    "yup": "^1.6.1"
   }
 }

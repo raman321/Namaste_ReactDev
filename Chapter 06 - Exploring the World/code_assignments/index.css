@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: PT Sans, Calibri, sans-serif;
-  overflow-x: hidden;
 }
 
 body {
@@ -25,8 +24,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 100px;
+  width: 100%;
+  height: 85px;
   background-color: #fff;
   color: #545454;
   border-radius: 5px;
@@ -39,8 +38,8 @@ body {
 }
 
 .logo {
-  width: 68%;
-  padding: 15px 0 10px 15px;
+  width: 62%;
+  padding: 15px 0 10px 10px;
   font-weight: bold;
   font-size: 2rem;
   color: #ff6600;
@@ -133,12 +132,13 @@ body {
   text-align: center;
   font-size: large;
   margin: 20px 0;
+  color: red;
 }
 
 /* Restaurant cards CSS */
 
 .restaurant-container {
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -150,7 +150,7 @@ body {
 
 .restaurant-card {
   width: 250px;
-  height: 350px;
+  height: 370px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(96, 96, 96, 0.1);
@@ -286,7 +286,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 45px;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background-color: var(--footer-bg-color);
   padding: 15px 10px 15px;

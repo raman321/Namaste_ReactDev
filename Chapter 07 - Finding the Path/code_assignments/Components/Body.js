@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { CiSearch } from "react-icons/ci";
 import Shimmer from "./Shimmer";
 import { SWIGGY_API_URL } from "../Utils/constants";
+import { Link } from "react-router-dom";
+
 
 function filterData(searchText, restaurants) {
   const resFilterData = restaurants.filter((restaurant) =>
@@ -105,10 +107,14 @@ const Body = () => {
       ) : (
         <div className="restaurant-container">
           {filteredRestaurants.map((restaurant) => (
-            <RestaurantCard
+            <Link
+              to={"/restaurant/" + restaurant?.info?.id}
               key={restaurant?.info?.id}
-              restaurantData={restaurant}
-            />
+            >
+              <RestaurantCard
+                restaurantData={restaurant}
+              />
+            </Link>
           ))}
         </div>
       )}

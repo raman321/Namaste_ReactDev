@@ -11,7 +11,7 @@ const RestaurantCard = (props) => {
     avgRating,
     cuisines,
     costForTwo,
-    deliveryTime,
+    sla,
   } = restaurantData?.info;
 
   return (
@@ -39,7 +39,7 @@ const RestaurantCard = (props) => {
             <i className="fa-solid fa-star"></i>
             {avgRating}
           </h4>
-          <h4>{deliveryTime} mins</h4>
+          <h4>{sla.deliveryTime} mins</h4>
           <h4>{costForTwo}</h4>
         </span>
 

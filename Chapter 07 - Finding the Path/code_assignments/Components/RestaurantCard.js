@@ -1,4 +1,4 @@
-import { CDN_URL } from "../Utils/constants";
+import { IMG_CDN_URL } from "../Utils/constants";
 
 // Restaurant card component: Image, name, cuisine
 const RestaurantCard = (props) => {
@@ -11,14 +11,14 @@ const RestaurantCard = (props) => {
     avgRating,
     cuisines,
     costForTwo,
-    deliveryTime,
+    sla,
   } = restaurantData?.info;
 
   return (
     <div className="restaurant-card">
       <img
         src={
-          CDN_URL + cloudinaryImageId
+          IMG_CDN_URL + cloudinaryImageId
         }
         alt={name}
         className="restaurant-logo"
@@ -39,7 +39,7 @@ const RestaurantCard = (props) => {
             <i className="fa-solid fa-star"></i>
             {avgRating}
           </h4>
-          <h4>{deliveryTime} mins</h4>
+          <h4>{sla.deliveryTime} mins</h4>
           <h4>{costForTwo}</h4>
         </span>
 
